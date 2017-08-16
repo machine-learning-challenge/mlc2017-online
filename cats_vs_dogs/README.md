@@ -90,7 +90,7 @@ gcloud ml-engine local train \
 
 ```sh
 # Downloads 344MB of data.
-gsutil cp gs://kmlc_test_train_bucket/cats_vs_dogs/tfrecords/train/train-0000[0-9]*-of-00014
+gsutil cp gs://kmlc_test_train_bucket/cats_vs_dogs/tfrecords/train/train-0000[0-9]*-of-00014 ./
 ```
 
 파일을 다운로드 받고 나면, `train_data_pattern` 인자를 통하여 job에 해당 파일을 입력으로 사용할 수 있습니다.("gs://..." 경로를 통하여 원격에 있는 파일이 아닌, 로컬 파일을 지정할 수 있습니다.)
