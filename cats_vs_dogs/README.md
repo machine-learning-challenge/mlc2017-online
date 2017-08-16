@@ -8,7 +8,7 @@ For English version, please check [English](README.en.md).
 여러분은 데이터를 이용해서 [model architectures](#overview-of-models)에 주어진 것과 같은 여러 모델들을 훈련할 수 있습니다.
 또한, 본 코드는 주어진 모델 외에도 여러분의 커스텀 모델에도 쉽게 적용될 수 있도록 디자인 되어 있습니다.
 
-MNIST를 훈련시키고 평가하는 방법에는 두 가지가 있습니다: Google Cloud 위에서 작업하실 수도 있고, 여러분의 로컬 머신에서 작업하실 수도 있습니다.
+Cats vs Dogs를 훈련시키고 평가하는 방법에는 두 가지가 있습니다: Google Cloud 위에서 작업하실 수도 있고, 여러분의 로컬 머신에서 작업하실 수도 있습니다.
 본 README는 양쪽 방법 모두를 다루고자 합니다.
 
 ## Table of Contents
