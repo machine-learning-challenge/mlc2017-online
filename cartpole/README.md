@@ -56,9 +56,6 @@ MNIST를 훈련시키고 평가하는 방법에는 두 가지가 있습니다: G
 |2|막대 각도|-41.8°|41.8°|
 |3|막대 끝부분의 속도|-Inf|Inf|
 
-At each iteration of an episode, a random position for the cart will be generated. Your algorithm
-will provide either a 0 or 1 depending on which direction the cart should be moved. For each
-iteration that the pole is upright, your algorithm will receive a reward of 1. When the TODO
 각 에피소드의 매 턴마다 카트의 위치가 랜덤하게 생성될 것입니다. 여러분의 알고리즘은 카트가 움직여야 하는 방향을 0 혹은 1로 반환해야 합니다. 막대가 똑바로 설 때마다 1 만큼의 보상을 얻게 됩니다. 그 후 위치, 속도, 각도, 그리고 막대의 속도를 저장하고 있는 4-튜플 포멧의 관찰 결과를 전달받습니다. 이 결과를 이용하여 훈련을 진행하고, 또 다음 액션을 결정하세요(0 = 왼쪽, 1 = 오른쪽). 한 에피소드가 끝날 때(막대가 회복 가능한 영역 밖으로 벗어나거나 200 턴을 버텨내었을 때), environment는 리셋 전까지 남아 있을 것입니다.
 
 본 문제에 대한 좀 더 자세한 정보는 [이 곳](https://gym.openai.com/docs)에서 확인하실 수 있습니다.
@@ -304,5 +301,5 @@ This sample code contains implementation of a policy gradient model
 
 ## About This Project
 This project is meant help people quickly get started working with the 
-[cartpole](LINK_TO_KMLC_SITE) dataset. TODO
+[cartpole](LINK_TO_KMLC_SITE) dataset.
 This is not an official Google product.
