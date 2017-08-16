@@ -46,7 +46,7 @@ class Service(object):
 
 
   def submit(self, user, password):
-    submit_url = self.SERVER + "/submit?r=%s" % (action, str(time.time()))
+    submit_url = self.SERVER + "/submit?r=%s" % str(time.time())
     kaggle_auth = {"user": user, "password": password}
     data = json.dumps(kaggle_auth)
     data_len = len(data)
