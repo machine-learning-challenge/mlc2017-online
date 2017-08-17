@@ -104,7 +104,7 @@ Open AI Gym 설치:
 ```sh
 git clone https://github.com/openai/gym.git
 cd gym
-pip install -e '.[all]'
+pip install -e '.[classic_control]'
 ```
 
 ### Testing Locally

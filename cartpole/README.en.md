@@ -117,7 +117,7 @@ To install openai gym
 ```sh
 git clone https://github.com/openai/gym.git
 cd gym
-pip install -e '.[all]'
+pip install -e '.[classic_control]'
 ```
 
 ### Testing Locally
