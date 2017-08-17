@@ -223,7 +223,7 @@ submit training $JOB_NAME \
 
 원하시면 다른 모델을 사용하시거나 Standalone 버전을 사용하실 수도 있습니다. env_warpper.py 안에 있는 gym env 부분을 원하시는 형태로 대체하시면 됩니다. 이 부분은 environment가 구동되고 있는 원격 서버에 접속하는 역할을 합니다. 여러분이 제출하신 결과는 이 서버를 통해서 Kaggle에 제출됩니다.
 
-이 쪽 방법 역시, 먼저 conf.py 파일을 편집하여 Kaggle username과 암호를 일벽해주세요.
+이 쪽 방법 역시, 먼저 conf.py 파일을 편집하여 Kaggle username과 암호를 입력해주세요.
 그 후 코드를 수정하시고 env부분을 여러분의 코드로 대체하시면 됩니다.
 
 ``` python
