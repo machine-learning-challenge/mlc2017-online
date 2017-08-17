@@ -141,7 +141,7 @@ gcloud ml-engine local train \
 ```
 
 To view the environment, you can also choose to turn rendering on
-provided you have a display available
+provided you have a display available. It won't work on Google Cloud:
 
 ```sh
 gcloud ml-engine local train \

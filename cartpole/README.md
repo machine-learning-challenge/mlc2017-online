@@ -124,7 +124,7 @@ gcloud ml-engine local train \
 --train_dir=/tmp/kmlc_cartpole_train --model=PolicyGradient --start_new_model
 ```
 
-작업 환경을 직접 보기 위해서는 렌더링을 켤 수도 있습니다:
+작업 환경을 직접 보기 위해서는 렌더링을 켤 수도 있습니다. 단, --rendering 플래그는 클라우드가 아닌 출력가능한 모니터가 있는 머신 위에서만 사용이 가능합니다:
 
 ```sh
 gcloud ml-engine local train \
