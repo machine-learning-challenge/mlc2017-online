@@ -101,7 +101,7 @@ training data files to the current directory.
 
 ```sh
 # Downloads 344MB of data.
-gsutil cp gs://kmlc_test_train_bucket/cats_vs_dogs/tfrecords/train/train-0000[0-9]*-of-00014
+gsutil cp gs://kmlc_test_train_bucket/cats_vs_dogs/tfrecords/train/train-0000[0-9]*-of-00014 ./
 ```
 Once you download the files, you can point the job to them using the
 'train_data_pattern' argument (i.e. instead of pointing to the "gs://..."
