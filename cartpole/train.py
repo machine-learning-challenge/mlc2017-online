@@ -1,4 +1,3 @@
-from pyglet.gl import *
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 from tensorflow import app
@@ -271,5 +270,7 @@ def main(unused_argv):
       model.after()
 
 if __name__ == "__main__":
+  if FLAGS.rendering:
+    exec('from pyglet.gl import *')
   logging.set_verbosity(logging.DEBUG)
   app.run()
