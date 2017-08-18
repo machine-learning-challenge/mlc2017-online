@@ -260,29 +260,6 @@ submit training $JOB_NAME \
 
 Check on the kaggle website for your results to be posted.
 
-If you want to use a different model or a standalone version, this is fine, you simply
-need to replace your use of the gym env with env_wrapper.py in this code. This will make
-a connection to a remote server with the environment running. The submission 
-sends your results to kaggle through the remote server.
-
-Again, first modify conf.py with username and password.
-Then modify your code and replace any usage of env with your .
-
-``` python
-    import conf
-    import env_wrapper
-    
-    # some code
-    
-    # replace env = gym.make('CartPole-v0') with 
-    env = env_wrapper.Service()
-
-    # for 10 episodes, run your code
-    
-    # finally
-    env.submit(conf.kaggle_user, conf.kaggle_passwd)
-```
-
 ### Accessing Files on Google Cloud
 
 You can browse the storage buckets you created on Google Cloud, for example, to
