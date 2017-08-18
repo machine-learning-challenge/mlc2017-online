@@ -170,6 +170,7 @@ The following commands will train a model on Google Cloud
 
 ```sh
 BUCKET_NAME=gs://${USER}_kmlc_cartpole_train_bucket
+JOB_TO_EVAL=kmlc_cartpole_train_pgradient_model
 # (One Time) Create a storage bucket to store training logs and checkpoints.
 gsutil mb -l us-east1 $BUCKET_NAME
 # Submit the training job.
@@ -180,7 +181,7 @@ submit training $JOB_NAME \
 --config=cartpole/cloudml-gpu.yaml \
 -- \
 --model=PolicyGradient \
---train_dir=$BUCKET_NAME/kmlc_cartpole_train
+--train_dir=$BUCKET_NAME/${JOB_TO_EVAL}
 ```
 
 In the 'gsutil' command above, the 'package-path' flag refers to the directory
@@ -276,7 +277,7 @@ Then modify your code and replace any usage of env with your .
     # replace env = gym.make('CartPole-v0') with 
     env = env_wrapper.Service()
 
-    # for 200 episodes, run your code
+    # for 10 episodes, run your code
     
     # finally
     env.submit(conf.kaggle_user, conf.kaggle_passwd)
