@@ -148,6 +148,7 @@ pip install -e '.[classic_control]'
 
 ```sh
 BUCKET_NAME=gs://${USER}_kmlc_cartpole_train_bucket
+JOB_TO_EVAL=kmlc_cartpole_train_pgradient_model
 # (One Time) Create a storage bucket to store training logs and checkpoints.
 gsutil mb -l us-east1 $BUCKET_NAME
 # Submit the training job.
@@ -158,7 +159,7 @@ submit training $JOB_NAME \
 --config=cartpole/cloudml-gpu.yaml \
 -- \
 --model=PolicyGradient \
---train_dir=$BUCKET_NAME/kmlc_cartpole_train
+--train_dir=$BUCKET_NAME/${JOB_TO_EVAL}
 ```
 
 위 `gsutil` 명령어에서 'package-path' 플래그는 'train.py' 스크립트를 포함하고 있는 경로를 의미하며, 동시에 Cloud worker에 업로드 될 패키지를 의미하기도 합니다. 'module-name'은 실행되어야 할 파이선 스크립트를 지정하는 플래그입니다.(본 예제에서는 train module을 사용하고 있습니다.)
