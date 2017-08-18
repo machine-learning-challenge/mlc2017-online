@@ -57,4 +57,7 @@ class Service(object):
     response = urllib2.urlopen(request)
     if (response.getcode() != 200) :
       raise Exception("cant connect to %s" % submit_url)
-    return response.read()
+    message = response.read()
+    if message.find("Upload successful") == -1:
+      raise Exception("upload failed! " + response.read())
+    return respond.read()
