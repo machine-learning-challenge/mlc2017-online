@@ -135,7 +135,8 @@ def main(unused_argv):
         logging.warning("using saved model %s", meta_filename)
         saver = recover_model(task, meta_filename)
       else:
-        raise("meta file not found")
+        logging.warning("meta file not found")
+        raise
 
       with tf.device(device_fn):
         init = tf.global_variables_initializer()
