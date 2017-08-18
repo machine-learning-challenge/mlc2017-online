@@ -375,5 +375,5 @@ This sample code contains implementation of the logistic model:
 
 ## About This Project
 This project is meant help people quickly get started working with the 
-[cats_vs_dogs](LINK_TO_KMLC_SITE) dataset.
+[cats_vs_dogs](https://inclass.kaggle.com/c/kmlc-challenge-1-cats-vs-dogs) dataset.
 This is not an official Google product.

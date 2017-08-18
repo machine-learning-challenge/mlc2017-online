@@ -149,7 +149,7 @@ gcloud ml-engine local train --package-path=quickdraw --module-name=quickdraw.ev
 ```
 
 ### Generate Predictions on Test Data
-You can generate the predictions using inference.py and submit the output file with the labels to Kaggle.
+You can generate the predictions using inference.py and submit the output file with the labels to [Kaggle](https://inclass.kaggle.com/c/kmlc-challenge-3-quick-draw).
 ```
 gcloud ml-engine local train --package-path=quickdraw --module-name=quickdraw.inference \
  -- --input_data_pattern='TEST_DATA_LOCATION/*' --train_dir=/tmp/quickdraw_train \

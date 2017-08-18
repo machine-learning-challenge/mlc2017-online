@@ -142,7 +142,7 @@ gcloud ml-engine local train --package-path=quickdraw --module-name=quickdraw.ev
 ```
 
 ### Generate Predictions on Test Data
-inference.py 를 호출하여 label을 예측하신 뒤, 결과 파일을 Kaggle에 제출해주세요.
+inference.py 를 호출하여 label을 예측하신 뒤, 결과 파일을 [Kaggle](https://inclass.kaggle.com/c/kmlc-challenge-3-quick-draw)에 제출해주세요.
 ```
 gcloud ml-engine local train --package-path=quickdraw --module-name=quickdraw.inference \
  -- --input_data_pattern='TEST_DATA_LOCATION/*' --train_dir=/tmp/quickdraw_train \

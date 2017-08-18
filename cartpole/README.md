@@ -301,5 +301,5 @@ This sample code contains implementation of a policy gradient model
 
 ## About This Project
 This project is meant help people quickly get started working with the 
-[cartpole](LINK_TO_KMLC_SITE) dataset.
+[cartpole](https://inclass.kaggle.com/c/kmlc-challenge-2-cartpole) dataset.
 This is not an official Google product.
