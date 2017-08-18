@@ -287,7 +287,7 @@ This sample code contains implementation of a policy gradient model
 ## Overview of Files
 
 ### Training
-*   `train.py`: 모델 훈련을 위한 코어 로직을 담가ㅗ 있는 스크립트입니다.
+*   `train.py`: 모델 훈련을 위한 코어 로직을 담고 있는 스크립트입니다.
 *   `models.py`: 예시 모델을 담고 있습니다.
 
 ### Evaluation
